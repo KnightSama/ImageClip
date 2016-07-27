@@ -13,6 +13,11 @@
 		56E0DB401D4899A200FA2BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E0DB3E1D4899A200FA2BB9 /* Main.storyboard */; };
 		56E0DB421D4899A200FA2BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E0DB411D4899A200FA2BB9 /* Assets.xcassets */; };
 		56E0DB451D4899A200FA2BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E0DB431D4899A200FA2BB9 /* LaunchScreen.storyboard */; };
+		56E0DB511D489A0700FA2BB9 /* ImageClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E0DB4E1D489A0700FA2BB9 /* ImageClipViewController.m */; };
+		56E0DB521D489A0700FA2BB9 /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E0DB501D489A0700FA2BB9 /* MaskView.m */; };
+		56E0DB561D489A6000FA2BB9 /* UIView+CoreFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E0DB551D489A6000FA2BB9 /* UIView+CoreFrame.m */; };
+		56E0DB591D489AC000FA2BB9 /* UIImage+ClipImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E0DB581D489AC000FA2BB9 /* UIImage+ClipImage.m */; };
+		56E0DB5B1D48A28800FA2BB9 /* Head_000.png in Resources */ = {isa = PBXBuildFile; fileRef = 56E0DB5A1D48A28800FA2BB9 /* Head_000.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		56E0DB411D4899A200FA2BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56E0DB441D4899A200FA2BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56E0DB461D4899A200FA2BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56E0DB4D1D489A0700FA2BB9 /* ImageClipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageClipViewController.h; sourceTree = "<group>"; };
+		56E0DB4E1D489A0700FA2BB9 /* ImageClipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageClipViewController.m; sourceTree = "<group>"; };
+		56E0DB4F1D489A0700FA2BB9 /* MaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
+		56E0DB501D489A0700FA2BB9 /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
+		56E0DB541D489A6000FA2BB9 /* UIView+CoreFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CoreFrame.h"; sourceTree = "<group>"; };
+		56E0DB551D489A6000FA2BB9 /* UIView+CoreFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CoreFrame.m"; sourceTree = "<group>"; };
+		56E0DB571D489AC000FA2BB9 /* UIImage+ClipImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ClipImage.h"; sourceTree = "<group>"; };
+		56E0DB581D489AC000FA2BB9 /* UIImage+ClipImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ClipImage.m"; sourceTree = "<group>"; };
+		56E0DB5A1D48A28800FA2BB9 /* Head_000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Head_000.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,8 @@
 		56E0DB341D4899A200FA2BB9 /* ImageClip */ = {
 			isa = PBXGroup;
 			children = (
+				56E0DB531D489A3500FA2BB9 /* Util */,
+				56E0DB4C1D489A0700FA2BB9 /* ImageClip */,
 				56E0DB381D4899A200FA2BB9 /* AppDelegate.h */,
 				56E0DB391D4899A200FA2BB9 /* AppDelegate.m */,
 				56E0DB3B1D4899A200FA2BB9 /* ViewController.h */,
@@ -74,9 +90,32 @@
 		56E0DB351D4899A200FA2BB9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				56E0DB5A1D48A28800FA2BB9 /* Head_000.png */,
 				56E0DB361D4899A200FA2BB9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56E0DB4C1D489A0700FA2BB9 /* ImageClip */ = {
+			isa = PBXGroup;
+			children = (
+				56E0DB4D1D489A0700FA2BB9 /* ImageClipViewController.h */,
+				56E0DB4E1D489A0700FA2BB9 /* ImageClipViewController.m */,
+				56E0DB4F1D489A0700FA2BB9 /* MaskView.h */,
+				56E0DB501D489A0700FA2BB9 /* MaskView.m */,
+			);
+			path = ImageClip;
+			sourceTree = "<group>";
+		};
+		56E0DB531D489A3500FA2BB9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				56E0DB571D489AC000FA2BB9 /* UIImage+ClipImage.h */,
+				56E0DB581D489AC000FA2BB9 /* UIImage+ClipImage.m */,
+				56E0DB541D489A6000FA2BB9 /* UIView+CoreFrame.h */,
+				56E0DB551D489A6000FA2BB9 /* UIView+CoreFrame.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +149,6 @@
 				TargetAttributes = {
 					56E0DB311D4899A200FA2BB9 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = XL2QBVQMMG;
 					};
 				};
 			};
@@ -137,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E0DB5B1D48A28800FA2BB9 /* Head_000.png in Resources */,
 				56E0DB451D4899A200FA2BB9 /* LaunchScreen.storyboard in Resources */,
 				56E0DB421D4899A200FA2BB9 /* Assets.xcassets in Resources */,
 				56E0DB401D4899A200FA2BB9 /* Main.storyboard in Resources */,
@@ -152,7 +191,11 @@
 			files = (
 				56E0DB3D1D4899A200FA2BB9 /* ViewController.m in Sources */,
 				56E0DB3A1D4899A200FA2BB9 /* AppDelegate.m in Sources */,
+				56E0DB511D489A0700FA2BB9 /* ImageClipViewController.m in Sources */,
 				56E0DB371D4899A200FA2BB9 /* main.m in Sources */,
+				56E0DB521D489A0700FA2BB9 /* MaskView.m in Sources */,
+				56E0DB591D489AC000FA2BB9 /* UIImage+ClipImage.m in Sources */,
+				56E0DB561D489A6000FA2BB9 /* UIView+CoreFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ImageClip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KnightSama.ImageClip;
@@ -277,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ImageClip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KnightSama.ImageClip;
